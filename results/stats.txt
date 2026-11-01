@@ -1,0 +1,23 @@
+python 3.13.5  macOS-26.2-arm64-arm-64bit-Mach-O  arm
+generated 2026-11-01 16:29
+
+random   B1a Gaussian Bayes         vs B1b RBF-SVM: dF1 -0.182  paired-t p=0.0001  wilcoxon p=0.0625
+random   B1c k-NN                   vs B1b RBF-SVM: dF1 -0.011  paired-t p=0.1468  wilcoxon p=0.1250
+random   B2 ResNet-18 (pretrained)  vs B1b RBF-SVM: dF1 +0.058  paired-t p=0.0004  wilcoxon p=0.0625
+random   P  Siamese + centroid      vs B1b RBF-SVM: dF1 -0.045  paired-t p=0.0024  wilcoxon p=0.0625
+capture  B1a Gaussian Bayes         vs B1b RBF-SVM: dF1 -0.132  paired-t p=0.0043  wilcoxon p=0.0625
+capture  B1c k-NN                   vs B1b RBF-SVM: dF1 -0.113  paired-t p=0.0149  wilcoxon p=0.0625
+capture  B2 ResNet-18 (pretrained)  vs B1b RBF-SVM: dF1 +0.087  paired-t p=0.0130  wilcoxon p=0.0625
+capture  P  Siamese + centroid      vs B1b RBF-SVM: dF1 +0.001  paired-t p=0.9374  wilcoxon p=1.0000
+device   B1a Gaussian Bayes         vs B1b RBF-SVM: dF1 -0.048  paired-t p=0.0848  wilcoxon p=0.1875
+device   B1c k-NN                   vs B1b RBF-SVM: dF1 -0.075  paired-t p=0.0000  wilcoxon p=0.0625
+device   B2 ResNet-18 (pretrained)  vs B1b RBF-SVM: dF1 +0.124  paired-t p=0.0010  wilcoxon p=0.0625
+device   P  Siamese + centroid      vs B1b RBF-SVM: dF1 +0.023  paired-t p=0.1923  wilcoxon p=0.3125
+drop random->device  B0 Majority                -4.4 pts
+drop random->device  B1a Gaussian Bayes         +30.4 pts
+drop random->device  B1b RBF-SVM                +40.3 pts
+drop random->device  B1c k-NN                   +49.2 pts
+drop random->device  B2 ResNet-18 (pretrained)  +34.8 pts
+drop random->device  P  Siamese + centroid      +35.4 pts
+
+device-ID diagnostic: the same 54-d features predict the RECORDER at 0.959 accuracy (26 devices, chance 0.038)
